@@ -5250,7 +5250,7 @@ void initDefaultExtensionMapping()
   // NOTE: when adding an extension, also add the extension in config.xml
   //                  extension      parser id
   updateLanguageMapping(".dox",      "c");
-  updateLanguageMapping(".txt",      "c"); // see bug 760836
+  // updateLanguageMapping(".txt",      "c"); // see bug 760836
   updateLanguageMapping(".doc",      "c");
   updateLanguageMapping(".c",        "c");
   updateLanguageMapping(".C",        "c");

@@ -1560,7 +1560,7 @@ void FileDefImpl::combineUsingRelations()
 bool FileDefImpl::isDocumentationFile() const
 {
   static const std::unordered_set<std::string> docExtensions =
-  { "doc", "txt", "dox", "md", "markdown" };
+  { "doc", "dox", "md", "markdown" };
 
   int lastDot = name().findRev('.');
   return (lastDot!=-1 && docExtensions.find(name().mid(lastDot+1).str())!=docExtensions.end()) ||
