@@ -80,7 +80,7 @@ function searchFor(query,page,count) {
         if (prefix) prefix+='/'; else prefix='';
         r+='<tr class="searchresult">'+
            '<td align="right">'+(data.first+i+1)+'.</td>'+
-           '<td>'+escapeHtml(item.type)+'&#160;'+
+           '<td>'+
                 '<a href="'+escapeHtml(prefix+item.url)+
                 '">'+escapeHtml(item.name)+'</a>';
         if (item.type=="source") {
